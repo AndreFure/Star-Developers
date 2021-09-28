@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.containersh
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+}
+.containersh .boxsh
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: rgb(35,35,35);
+    background: radial-gradient(circle, rgba(35,35,35,1) 0%, rgba(0,0,0,1) 100%);
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+.containersh .boxsh::before
+{
+    content: 'Crea tu';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+
+.containersh .boxsh::after
+{
+    content: 'WEB';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.containersh .boxsh:hover::before,
+.containersh .boxsh:hover::after
+{
+    opacity: 0.04;
+}
+.containersh .boxsh .namesh
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.containersh .boxsh:hover .namesh
+{
+    top: 40px;
+    opacity: 1;
+}
+.containersh .boxsh .buysh
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    width: 170px;
+    text-align: center;
+    z-index: 10;
+}
+.containersh .boxsh:hover .buysh
+{
+    bottom: 30px;
+    opacity: 1;
+}
+.containersh .boxsh .circlesh
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: -9;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,0px)
+
+}
+.containersh .boxsh .productsh
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 12;
+    transform: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,10px)rotate(-15deg);
+}
+.containersh .boxsh:nth-child(1) .circlesh,
+.containersh .boxsh:nth-child(1) .buysh
+{
+    background: rgb(82,69,52);
+    background: radial-gradient(circle, rgba(82,69,52,1) 0%, rgba(252,236,213,1) 100%);
+}
+.containersh .boxsh:nth-child(2) .circlesh,
+.containersh .boxsh:nth-child(2) .buysh
+{
+    background: rgb(0,18,73);
+    background: radial-gradient(circle, rgba(0,18,73,1) 0%, rgba(103,194,222,1) 100%);
+}
+.containersh .boxsh:nth-child(3) .circlesh,
+.containersh .boxsh:nth-child(3) .buysh
+{
+    background: rgb(255,81,164);
+    background: radial-gradient(circle, rgba(255,81,164,1) 0%, rgba(143,106,203,1) 100%);
+
+}
+.containersh .boxsh:hover .productsh
+{
+    transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+}
+
+@media screen and (max-width: 768px){
+    .containersh{
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    }
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+.fu{
+  display: grid;
+  justify-content: end;
+  align-content: end;
+  min-height: 60vh;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+footer{
+  position: relative;
+  width: 100vw;
+  height: auto;
+  padding: 50px 100px;
+  background: rgb(35,35,35);
+  background: radial-gradient(circle, rgba(35,35,35,1) 0%, rgba(0,0,0,1) 100%);
+}
+.containerfoot{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap:20px;
+}
+.containerfoot .sec h3{
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.containerfoot .sec h3::before{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: rgba(252,236,213,1);
+}
+.containerfoot .sec p{
+  color: #fff;
+}
+.scift{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-gap: 10px;
+}
+.scift li{
+  list-style: none;
+}
+.scift li a{
+  display: inline-block;
+  width: 48px;
+  height:48px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background: rgba(252,236,213,1);
+  text-decoration: none;
+  border-radius: 4px;
+}
+.infof li img{
+  height:40px;
+}
+.scift li a:hover{
+  background: rgb(82,69,52);
+}
+.quicklinks{
+  position: relative;
+}
+.quicklinks li{
+  list-style: none;
+}
+.quicklinks li a{
+  color: #f7f7f7;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.quicklinks li a:hover{
+  color: rgba(252,236,213,1);
+}
+.infof{
+  position: relative;
+}
+.infof li{
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-bottom: 16px;
+}
+.infof li span:nth-child(1){
+  color: #fff;
+  font-size: 20px;
+}
+.infof li span{
+  color: #fff;
+  margin-left: 3vw;
+}
+.infof a{
+  color: #f7f7f7;
+  text-decoration: none;
+  margin-left: 3vw;
+}
+.infof a:hover{
+  color: rgba(252,236,213,1);
+}
+.copyrightText{
+  width: 100%;
+  background: black;
+  padding: 8px 100px;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 991px){
+  footer{
+    padding: 40px;
+  }
+  footer .containerfoot{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .copyrightText{
+    padding: 8px 40px;
+  }
+}
+@media (max-width: 768px){
+  .containerfoot{
+    grid-template-columns: repeat(1,1fr);
+    width: 100vw;
+    margin-left: 10vw;
+  }
+}
