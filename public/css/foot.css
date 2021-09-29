@@ -21,13 +21,13 @@ footer{
   grid-template-columns: 2fr 1fr 1fr 1fr;
   grid-gap:20px;
 }
-.containerfoot .sec h3{
+.containerfoot .sec .lr, h3{
   position: relative;
   color: #fff;
   font-weight: 500;
   margin-bottom: 15px;
 }
-.containerfoot .sec h3::before{
+.containerfoot .sec .lr::before{
   content: '';
   position: absolute;
   bottom: -5px;

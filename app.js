@@ -17,8 +17,8 @@ app.get('', (req, res) => {
   res.render('index');
 });
 
-app.get('/us', (req, res) => {
-  res.render('us');
+app.get('/contacto', (req, res) => {
+  res.render('contacto');
 });
 
 app.get('/cookiespolicy', (req, res) => {
