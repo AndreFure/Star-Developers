@@ -36,7 +36,7 @@
   text-decoration: none;
   overflow: hidden;
   transition: 0.5s;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur( 10px );-webkit-backdrop-filter: blur( 10px );
 }
 
 .containerbl .btnl:hover a{
@@ -83,7 +83,7 @@
   top: -5px;
   width: 30px;
   height: 10px;
-  background: #d144a2;
+  background: #fc9002;
   border-radius: 10px;
   transition: 0.9s;
 }
@@ -96,8 +96,8 @@
 }
 .containerbl .btnl:nth-child(1)::before,
 .containerbl .btnl:nth-child(1)::after{
-  background: linear-gradient(145deg, #b981a6, #e7538c);
-  box-shadow:  0 0 5px #b981a6, 0 0 15px #b981a6, 0 0 30px #b981a6, 0 0 60px #b981a6;
+  background: linear-gradient(145deg, #ff946a, #fa5204);
+  box-shadow:  0 0 5px #f8b689, 0 0 15px #f8b689, 0 0 30px #f8b689, 0 0 60px #f8b689;
 }
 
 @media (max-width: 375px){

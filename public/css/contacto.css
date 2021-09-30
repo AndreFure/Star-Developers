@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -43,6 +43,7 @@ p{
   margin-bottom: 30px;
   color: #fff;
   font-size: 25px;
+  font-weight: 900;
 }
 input{
   height: 30px;
@@ -55,6 +56,7 @@ input, textarea{
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+  font-weight: 400;
 }
 input:hover, textarea:hover{
   background: rgba(255, 255, 255, 0.18);
@@ -68,11 +70,12 @@ button{
   border-radius: 40px 0px 40px 0px;
   margin-top: 30px;
   background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,212,1) 50%, rgba(252,176,69,1) 100%);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgb(22, 187, 199) 50%, rgb(50, 65, 97) 100%);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  font-weight: 900;
 }
 button:hover{
-  background: rgb(131,58,180);
+  background: rgb(82, 36, 112);
 }
 ul{
   display: flex;
@@ -81,13 +84,15 @@ ul{
   width: 100px;
   height: 40px;
   border-radius: 20px;
-  border: 3px solid rgb(131,58,180);
+  border: 2px solid rgb(131,58,180);
 }
 ul:hover{
   border: none;
   border-radius: 20px;
   background: linear-gradient(145deg, #8c3ec1, #7634a2);
+  padding-left: 2px;
 }
+
 li{
   display: flex;
   align-items: center;

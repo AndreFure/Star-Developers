@@ -55,6 +55,25 @@ header ul li a {
   margin-left: 40px;
   text-decoration: none;
 }
+.liContacto{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid rgb(131,58,180);
+  margin: -8px 0px 0px 25px;
+}
+.liContacto:hover{
+  background: linear-gradient(145deg, #8c3ec1, #7634a2);
+}
+.liContacto a{
+  margin-left: 10px;
+}
+.liContacto a:hover{
+  color: #fff;
+}
 h1{
   color: #fff;
   font-weight: 400;
